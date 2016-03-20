@@ -27,7 +27,12 @@ for line in f:
 			diffy = diff.days/30/12
 			diffmo = diff.days/30 - (diff.days/30/12 * 12)
 			diffd = diff.days - (diff.days/30 * 30)
+			if (diffd == 0):
+				diffd = 1
 			diffh = diff.seconds/60/60
 			diffm = diff.seconds/60 - (diff.seconds/60/60 * 60)
-			print(split_line[0].strip() + '    ${alignr}' + str(diffy).rjust(1,'0')+'y '+str(diffmo).rjust(2, '0')+'m '+str(diffd).rjust(2,'0')+'d')
+			if (diffy >-1):
+				print(split_line[0].strip() + '    ${alignr}' + str(diffy).rjust(1,'0')+'y '+str(diffmo).rjust(2, '0')+'m '+str(diffd).rjust(2,'0')+'d')
+			else :
+				print(split_line[0].strip() + '    ${alignr}Date Passed')
 
