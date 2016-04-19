@@ -18,3 +18,6 @@ colorscheme solarized
 
 " Let the arrow keys wrap around lines
 set whichwrap+=<,>,h,l,[,]
+
+" Map F5 to make with extra carrage return to quit the Press enter to continue dialog
+map <F5> :!make<CR><CR> 
