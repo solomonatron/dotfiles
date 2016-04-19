@@ -27,8 +27,8 @@ for line in f:
 			diffy = diff.days/30/12
 			diffmo = diff.days/30 - (diff.days/30/12 * 12)
 			diffd = diff.days - (diff.days/30 * 30)
-			if (diffd == 0):
-				diffd = 1
+			#if (diffd == 0):
+			diffd = diffd + 1
 			diffh = diff.seconds/60/60
 			diffm = diff.seconds/60 - (diff.seconds/60/60 * 60)
 			if (diffy >-1):
