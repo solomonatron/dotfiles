@@ -20,4 +20,9 @@ colorscheme solarized
 set whichwrap+=<,>,h,l,[,]
 
 " Map F5 to make with extra carrage return to quit the Press enter to continue dialog
-map <F5> :!make<CR><CR> 
+map <F5> :!make<CR><CR>
+
+" Hide the menus and scrollbar in gvim
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
