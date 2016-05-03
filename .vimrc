@@ -1,4 +1,4 @@
-
+" Make pretty
 syntax on
 
 " Let me backspace
@@ -29,3 +29,8 @@ map <F4> :w<CR>:!make<CR>
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
+
+" Set wordwrapping
+set wrap
+set linebreak
+set breakindent

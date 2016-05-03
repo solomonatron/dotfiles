@@ -54,6 +54,15 @@
 "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause" XF86AudioPlay
 	Menu	
 
+# Next
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next" XF86AudioNext
+	Shift + Menu
+
+# Prev
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous" XF86AudioPrev
+	Control + Menu
+
+
 #"xterm -geom 50x20+20+20"
 #   Shift+Mod2+alt + s
 #
