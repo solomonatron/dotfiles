@@ -20,7 +20,9 @@ colorscheme solarized
 set whichwrap+=<,>,h,l,[,]
 
 " Map F5 to save, then make with extra carrage return to quit the Press enter to continue dialog
-map <F5> :w<CR>:!make<CR><CR>
+"map <F5> :w<CR>:!make<CR><CR>
+map <F5> :w<CR>:!./makeit.sh<CR><CR>
+
 
 " Map F4 to be the same thing without the extra enter
 map <F4> :w<CR>:!make<CR>
